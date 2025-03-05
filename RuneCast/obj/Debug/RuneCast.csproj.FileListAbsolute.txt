@@ -1,0 +1,10 @@
+C:\Users\RobbiePunk\Projects\C#\RuneCast\RuneCast\bin\Debug\RuneCast.exe.config
+C:\Users\RobbiePunk\Projects\C#\RuneCast\RuneCast\bin\Debug\RuneCast.exe
+C:\Users\RobbiePunk\Projects\C#\RuneCast\RuneCast\bin\Debug\RuneCast.pdb
+C:\Users\RobbiePunk\Projects\C#\RuneCast\RuneCast\obj\Debug\RuneCast.csproj.AssemblyReference.cache
+C:\Users\RobbiePunk\Projects\C#\RuneCast\RuneCast\obj\Debug\RuneCast.Form1.resources
+C:\Users\RobbiePunk\Projects\C#\RuneCast\RuneCast\obj\Debug\RuneCast.Properties.Resources.resources
+C:\Users\RobbiePunk\Projects\C#\RuneCast\RuneCast\obj\Debug\RuneCast.csproj.GenerateResource.cache
+C:\Users\RobbiePunk\Projects\C#\RuneCast\RuneCast\obj\Debug\RuneCast.csproj.CoreCompileInputs.cache
+C:\Users\RobbiePunk\Projects\C#\RuneCast\RuneCast\obj\Debug\RuneCast.exe
+C:\Users\RobbiePunk\Projects\C#\RuneCast\RuneCast\obj\Debug\RuneCast.pdb
