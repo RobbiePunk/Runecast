@@ -103,9 +103,9 @@ namespace RuneCast
                 castedRune[i] = new Point((int)Math.Floor(coef * (double)(castedRune[i].X - minX)), (int)Math.Floor(coef * (double)(castedRune[i].Y - minY)));
             }
 
-            return;
+            //return;
 
-            Point center = new Point(0, 0);
+            Point center = new Point(RuneSize / 2, RuneSize / 2);
 
             for (int i = 0; i < castedRune.Count; i++)
             {
@@ -236,12 +236,36 @@ namespace RuneCast
             DrawDebug(loadedRune);
         }
 
+        int FindBestDotIndex(List<Point> buf, int castedRuneDotIndex)
+        {
+            double minDist = 10000;
+            int ind = 0;
+            for (int i = 0; i < buf.Count; i++)
+            {
+                double dist = GetDistance(castedRune[castedRuneDotIndex], buf[i]);
+                if(dist < minDist)
+                {
+                    minDist = dist;
+                    ind = i;
+                }
+            }
+            return ind;
+        }
+
         int CountDif()
         {
+            List<Point> buf = new List<Point>();
+            foreach(Point p in loadedRune)
+                buf.Add(p);
+
             int dif = 0;
             for (int i = 0; i < castedRune.Count; i++)
             {
-                dif += (int)GetDistance(castedRune[i], loadedRune[i]);
+                int ind = FindBestDotIndex(buf, i);
+                dif += (int)GetDistance(castedRune[i], buf[ind]);
+
+                buf.RemoveAt(ind);
+
             }
 
             return dif;
